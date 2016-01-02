@@ -1,0 +1,23 @@
+{
+    "name": "DeGoogle",
+    "description": "Remove Google Redirect in Google Search Results",
+    "version": "0.0.1",
+    "permissions": [
+        "*://*.google.com/*",
+        "tabs"
+    ],
+    "page_action": {
+        "default_title": "DeGoogle"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["content.js"],
+        "run_at": "document_end"         // pay attention to this line
+        }
+    ],
+    "manifest_version" : 2
+}
