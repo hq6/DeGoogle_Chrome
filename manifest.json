@@ -3,7 +3,6 @@
     "description": "Remove Google Redirect in Google Search Results",
     "version": "0.0.1",
     "permissions": [
-        "*://*.google.com/*",
         "tabs"
     ],
     "page_action": {
